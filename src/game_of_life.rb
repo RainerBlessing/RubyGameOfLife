@@ -22,7 +22,6 @@ class GameOfLife
             cell_y.add_neighbour(@cell_x[xi-1][yi+1])
         end
 
-
         cell_y.add_neighbour(@cell_x[xi][yi-1]) if yi-1>=0
         cell_y.add_neighbour(@cell_x[xi][yi+1]) if yi+1<cell_x.length
 

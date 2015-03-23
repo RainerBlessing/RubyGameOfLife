@@ -24,6 +24,11 @@ class Cell
       neighbour.old_status == 1 && alive = alive +1
     end
 
-    alive>2 ? 1 : 0
+    case status
+      when 0
+        alive>2 ? 1 : 0
+      when 1
+        alive == 2 || alive == 3 ? 1 : 0
+    end
   end
 end
